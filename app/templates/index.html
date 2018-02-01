@@ -3,16 +3,102 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>Matt Favoino</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
 
-    <!-- jQuery, Tether, Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <!-- Begin Nav -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1" id="navbar-name" href="#">Matt Favoino</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#">About</a>
+        <a class="nav-item nav-link" href="#">Projects</a>
+        <a class="nav-item nav-link" href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Begin Body -->
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4 text-center">Welcome.</h1>
+        <br>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">About</h3>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <img src="{{ url_for('static', filename='headshot.jpg')}}" alt="headshot"/>
+                      <i class="fab fa-linkedin fa-2x" id="linkedin-top"></i>
+                      <i class="far fa-envelope fa-2x" id="mail-top"></i>
+                      <i class="fab fa-github fa-2x" id="github-top"></i>
+                    </div>
+                    <div class="col-md-8">
+                      <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+                      <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Skills</h3>
+                  <div class="row skill-rows">
+                    <div class="col-md-12">
+                        <span class="badge badge-secondary">Python</span>
+                        <span class="badge badge-secondary">JavaScript</span>
+                        <span class="badge badge-secondary">SQL</span>
+                    </div>
+                  </div>
+                  <div class="row skill-rows">
+                    <div class="col-md-12">
+                        <span class="badge badge-secondary">Django</span>
+                        <span class="badge badge-secondary">HTML</span>
+                        <span class="badge badge-secondary">CSS</span>
+                    </div>
+                  </div>
+                  <div class="row skill-rows">
+                    <div class="col-md-12">
+                        <span class="badge badge-secondary">PostgreSQL</span>
+                        <span class="badge badge-secondary">jQuery</span>
+                        <span class="badge badge-secondary">Pyramid</span>
+                    </div>
+                  </div>
+                  <div class="row skill-rows">
+                    <div class="col-md-12">
+                        <span class="badge badge-secondary">Heroku</span>
+                        <span class="badge badge-secondary">Bootstrap</span>
+                        <span class="badge badge-secondary">TDD</span>
+                    </div>
+                  </div>
+                  <div class="row skill-rows">
+                    <div class="col-md-12">
+                        <span class="badge badge-secondary">Git / Github</span>
+                        <span class="badge badge-secondary">Jira</span>
+                        <span class="badge badge-secondary">Agile Workflow</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery, Popper, Bootstrap scripts. -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
