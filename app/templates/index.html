@@ -32,19 +32,19 @@
         <br>
         <div class="row">
           <div class="col-md-8">
-            <div class="card">
+            <div class="card about-area">
               <div class="card-body">
                 <h3 class="card-title">About Me</h3>
                   <div class="row">
                     <div class="col-md-4">
                       <img src="{{ url_for('static', filename='photos/headshot.jpg')}}" id="headshot" alt="headshot"/>
-                      <a href="https://www.linkedin.com/in/matthewfavoino">
+                      <a href="https://www.linkedin.com/in/matthewfavoino" target="_blank">
                         <i class="fab fa-linkedin fa-2x" id="linkedin-top"></i>
                       </a>
-                      <a href="mailto:mattfavoino@gmail.com">
+                      <a href="mailto:mattfavoino@gmail.com" target="_blank">
                         <i class="far fa-envelope fa-2x" id="mail-top"></i>
                       </a>
-                      <a href="https://www.github.com/famavott">
+                      <a href="https://www.github.com/famavott" target="_blank">
                         <i class="fab fa-github fa-2x" id="github-top"></i>
                       </a>
                     </div>
@@ -112,8 +112,12 @@
               <div class="card-body">
                 <h5 class="card-title">Social Recon</h5>
                 <p class="card-text">Open-source social media scraper to investigate the online presence behind a username/email</p>
-                <i class="fas fa-external-link-alt fa-lg"></i>
-                <i class="fab fa-github fa-lg"></i>
+                <a href="https://www.social-recon.net/" target="_blank">
+                  <i class="fas fa-external-link-alt fa-lg"></i>
+                </a>
+                <a href="https://github.com/famavott/osint-scraper" target="_blank">
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -123,23 +127,33 @@
               <div class="card-body">
                 <h5 class="card-title">Write-me</h5>
                 <p class="card-text">PyPI package that generates a README.md customized for your code base</p>
-                <i class="fas fa-external-link-alt fa-lg"></i>
-                <i class="fab fa-github fa-lg"></i>
-                <i class="fab fa-python fa-lg"></i>
+                <a href="https://write-me.readthedocs.io/en/latest/" target="_blank">
+                  <i class="fas fa-external-link-alt fa-lg"></i>
+                </a>
+                <a href="https://github.com/chelseadole/write-me" target="_blank">
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="https://pypi.python.org/pypi/write-me" target="_blank">
+                  <i class="fab fa-python fa-lg"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
         <!-- Second row of projects -->
-        <div class="row">
+        <div class="row" id="bottom-proj-row">
           <div class="col-md-6">
             <div class="card mx-auto ind-project">
               <img class="card-img-top" src="{{ url_for('static', filename='photos/meeting_finder.png')}}" alt="Project 3">
               <div class="card-body">
                 <h5 class="card-title">Seattle AA Meeting Finder</h5>
                 <p class="card-text">Connects people in the Seattle area to Alcoholics Anonymous meetings going on near them</p>
-                <i class="fas fa-external-link-alt fa-lg"></i>
-                <i class="fab fa-github fa-lg"></i>
+                <a href="https://seattle-aa-meeting-finder.herokuapp.com/" target="_blank">
+                  <i class="fas fa-external-link-alt fa-lg"></i>
+                </a>
+                <a href="https://github.com/nathancmoore/meeting-finder" target="_blank">
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -149,8 +163,12 @@
               <div class="card-body">
                 <h5 class="card-title">HomeFit</h5>
                 <p class="card-text">Generates a customized home workout with instructions based on inputs from a user</p>
-                <i class="fas fa-external-link-alt fa-lg"></i>
-                <i class="fab fa-github fa-lg"></i>
+                <a href="https://famavott.github.io/Home-Workout-Generator/" target="_blank">
+                  <i class="fas fa-external-link-alt fa-lg"></i>
+                </a>
+                <a href="https://github.com/famavott/Home-Workout-Generator" target="_blank">
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -158,14 +176,22 @@
     </div>
     <div class="contact-div">
         <div class="container contact-top">
-          <h2 class="text-center" id="contact-heading">Contact Me</h2>
+          <h2 class="text-center" id="contact-heading">Stay in Touch</h2>
           <div class="contact-info">
             <div class="row text-center">
               <div class="col">
-                <i class="fab fa-github fa-3x bottom-icons"></i>
-                <i class="far fa-envelope fa-3x bottom-icons"></i>
-                <i class="fab fa-linkedin fa-3x bottom-icons"></i>
-                <i class="fab fa-angellist fa-3x bottom-icons"></i>
+                <a href="https://www.github.com/famavott" target="_blank">
+                  <i class="fab fa-github fa-3x bottom-icons"></i>
+                </a>
+                <a href="mailto:mattfavoino@gmail.com" target="_blank">
+                  <i class="far fa-envelope fa-3x bottom-icons"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/matthewfavoino" target="_blank">
+                  <i class="fab fa-linkedin fa-3x bottom-icons"></i>
+                </a>
+                <a href="https://angel.co/matthew-favoino" target="_blank">
+                  <i class="fab fa-angellist fa-3x bottom-icons"></i>
+                </a>
               </div>
             </div>
         </div>

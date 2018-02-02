@@ -6,6 +6,10 @@ body {
     background-color: #424242;
 }
 
+.about-area {
+    margin-bottom: 3rem;
+}
+
 #headshot {
     width: 80%;
     float: left;
@@ -67,10 +71,18 @@ body {
     color: gray;
 }
 
+.fa-python {
+    color: gray;
+}
+
+.fa-external-link-alt {
+    color: gray;
+}
+
 .contact-div {
     background-color: #e9ecef;
     height: 14rem;
-    padding-top: 2rem;
+    padding-top: 1.7rem;
 }
 
 #contact-heading {
@@ -80,4 +92,16 @@ body {
 
 .bottom-icons {
     margin-right: 1rem;
+}
+
+#bottom-proj-row {
+    margin-bottom: 2rem;
+}
+
+.fa-angellist {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
 }
