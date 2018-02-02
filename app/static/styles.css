@@ -49,10 +49,27 @@ body {
 }
 
 #projects-title {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    color: white;
 }
 
 .ind-project {
     width: 60%;
     margin-bottom: 1rem;
+}
+
+.card-text {
+    color: black;
+}
+
+.fa-lg {
+    color: gray;
+}
+
+.contact-div {
+    background-color: #e9ecef;
+}
+
+#contact-heading {
+    margin-top: 5rem;
 }

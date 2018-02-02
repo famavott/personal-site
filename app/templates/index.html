@@ -86,6 +86,7 @@
                         <span class="badge badge-secondary">Heroku</span>
                         <span class="badge badge-secondary">Bootstrap</span>
                         <span class="badge badge-secondary">TDD</span>
+                        <span class="badge badge-secondary">Flask</span>
                     </div>
                   </div>
                   <div class="row skill-rows">
@@ -101,6 +102,7 @@
         </div>
       </div>
     </div>
+    <!-- Begin projects container -->
     <div class="container" id="projects-div">
       <h2 class="text-center" id="projects-title">My Work</h2>
         <div class="row">
@@ -109,7 +111,9 @@
               <img class="card-img-top" src="{{ url_for('static', filename='photos/social_recon.png')}}" alt="Project 1">
               <div class="card-body">
                 <h5 class="card-title">Social Recon</h5>
-                <p class="card-text">Words, technology, etc</p>
+                <p class="card-text">Open-source social media scraper to investigate the online presence behind a username/email</p>
+                <i class="fas fa-external-link-alt fa-lg"></i>
+                <i class="fab fa-github fa-lg"></i>
               </div>
             </div>
           </div>
@@ -118,21 +122,24 @@
               <img class="card-img-top" src="{{ url_for('static', filename='photos/write_me.png')}}" alt="Project 1">
               <div class="card-body">
                 <h5 class="card-title">Write-me</h5>
-                <p class="card-text">Words, technology, etc</p>
+                <p class="card-text">PyPI package that generates a README.md customized for your code base</p>
+                <i class="fas fa-external-link-alt fa-lg"></i>
+                <i class="fab fa-github fa-lg"></i>
+                <i class="fab fa-python fa-lg"></i>
               </div>
             </div>
           </div>
         </div>
-{#         <div class="row">
-          <br>
-        </div> #}
+        <!-- Second row of projects -->
         <div class="row">
           <div class="col-md-6">
             <div class="card mx-auto ind-project">
               <img class="card-img-top" src="{{ url_for('static', filename='photos/meeting_finder.png')}}" alt="Project 1">
               <div class="card-body">
                 <h5 class="card-title">Seattle AA Meeting Finder</h5>
-                <p class="card-text">Words, technology, etc</p>
+                <p class="card-text">Connects people in the Seattle area to Alcoholics Anonymous meetings going on near them</p>
+                <i class="fas fa-external-link-alt fa-lg"></i>
+                <i class="fab fa-github fa-lg"></i>
               </div>
             </div>
           </div>
@@ -141,11 +148,19 @@
               <img class="card-img-top" src="{{ url_for('static', filename='photos/homefit.png')}}" alt="Project 1">
               <div class="card-body">
                 <h5 class="card-title">HomeFit</h5>
-                <p class="card-text">Words, technology, etc</p>
+                <p class="card-text">Generates a customized home workout with instructions based on inputs from a user</p>
+                <i class="fas fa-external-link-alt fa-lg"></i>
+                <i class="fab fa-github fa-lg"></i>
               </div>
             </div>
           </div>
         </div>
+    </div>
+      <div class="contact-div">
+        <div class="container contact-top">
+          <h2 class="text-center display-4" id="contact-heading">Let's get in touch</h2>
+        </div>
+      </div>
     </div>
 
     <!-- jQuery, Popper, Bootstrap scripts. -->
