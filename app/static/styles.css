@@ -2,27 +2,38 @@ nav {
     border-bottom: thin solid black;
 }
 
-/*#navbar-name {
-    border: thin black solid;
-    border-radius: 12px;
-    padding: 0.4rem;
-}*/
+body {
+    background-color: #424242;
+}
 
-img {
+#headshot {
     width: 80%;
     float: left;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    border: thin gray solid;
 }
 
-/*#linkedin-top {
-    margin: auto;
+.card-text {
+    font-size: 0.9rem;
 }
 
-#github-top {
-    margin: auto;
-}*/
+.fa-linkedin {
+    margin-right: 0.7rem;
+    color: black;
+}
+
+.fa-envelope {
+    margin-right: 0.7rem;
+    color: black;
+}
+
+.fa-github {
+    color: black;
+}
+
+.skills-container {
+    margin-top: 0.8rem;
+}
 
 .skill-rows {
     margin-bottom: 1.2rem;
@@ -30,4 +41,35 @@ img {
 
 .badge {
     font-size: 0.9rem;
+    margin-right: 0.3rem;
+}
+
+#projects-div {
+    color: gray;
+}
+
+#projects-title {
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.ind-project {
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: black;
+}
+
+.fa-lg {
+    color: gray;
+}
+
+.contact-div {
+    background-color: #e9ecef;
+}
+
+#contact-heading {
+    margin-top: 5rem;
 }
