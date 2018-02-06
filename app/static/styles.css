@@ -2,12 +2,29 @@ nav {
     border-bottom: thin solid black;
 }
 
+#navbar-name {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    color: #24a745;
+}
+
+.navbar-nav {
+    margin-right: 1rem;
+}
+
 body {
     background-color: #424242;
+    position: relative;
+    padding-top: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-labels {
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .about-area {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 #headshot {
@@ -50,10 +67,11 @@ body {
 
 #projects-div {
     color: gray;
+    padding-top: 3.3rem;
 }
 
 #projects-title {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     font-size: 3rem;
     color: white;
 }
@@ -61,6 +79,10 @@ body {
 .ind-project {
     width: 60%;
     margin-bottom: 1.5rem;
+}
+
+h5 {
+    color: #28a745;
 }
 
 .card-text {
@@ -102,6 +124,22 @@ body {
     color: black;
 }
 
+.fa-lg:hover {
+    color: black;
+}
+
+.fa-2x:hover {
+    color: #28a745;
+}
+
+.fa-3x:hover {
+    color: #28a745;
+}
+
 a:hover {
     text-decoration: none;
+}
+
+#notfound {
+    color: gray;
 }

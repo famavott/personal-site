@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Matt Favoino</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Personal website for Matt Favoino.">
+    <meta name="keywords" content="Matt Favoino,Developer,Python,Social Recon,Software">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Raleway" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='mf.ico') }}">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <title>Matt Favoino</title>
   </head>
 
   <!-- Begin Nav -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1" id="navbar-name" href="#">Matt Favoino</span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light" id="only-nav">
+    <a href="#about-div">
+      <span class="navbar-brand mb-0 h1" id="navbar-name" href="#">Matt Favoino</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#">About</a>
-        <a class="nav-item nav-link" href="#">Projects</a>
-        <a class="nav-item nav-link" href="#">Contact</a>
+        <a class="nav-item nav-link" href="#about-div">About</a>
+        <a class="nav-item nav-link" href="#projects-div">Projects</a>
+        <a class="nav-item nav-link" href="#contact-div">Contact</a>
       </div>
     </div>
   </nav>
 
   <!-- Begin Body -->
-  <body>
+  <body data-spy="scroll" data-target="#only-nav" data-offset="0" id="about-div">
     <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4 text-center">Welcome.</h1>
+      <div class="container about-area">
+        <h1 class="display-4 text-center section-labels">Welcome.</h1>
         <br>
         <div class="row">
           <div class="col-md-8">
-            <div class="card about-area">
+            <div class="card">
               <div class="card-body">
                 <h3 class="card-title">About Me</h3>
                   <div class="row">
                     <div class="col-md-4">
-                      <img src="{{ url_for('static', filename='photos/headshot.jpg')}}" id="headshot" alt="headshot"/>
+                      <img src="{{ url_for('static', filename='photos/headshot.jpg')}}" id="headshot" alt="matt's headshot"/>
                       <a href="https://www.linkedin.com/in/matthewfavoino" target="_blank">
                         <i class="fab fa-linkedin fa-2x" id="linkedin-top"></i>
                       </a>
@@ -49,8 +56,8 @@
                       </a>
                     </div>
                     <div class="col-md-8">
-                      <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                      <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                      <p class="card-text">Hello! I’m a Software Developer with experience building applications in Python that is looking to help solve real-world problems with code, and find a fun team that is focused on the same. With a background in intelligence analysis serving in the military, I transitioned to the tech community where I’ve found the pace of change and opportunity to learn new skills exciting.</p>
+                      <p class="card-text">I am seeking opportunities to make an immediate impact, while continuing to grow my programming skills in a collaborative environment. If you think I might be a good fit for your team, let’s chat.</p>
                     </div>
                   </div>
               </div>
@@ -62,38 +69,38 @@
                 <h3 class="card-title">Skills</h3>
                   <div class="row skill-rows">
                     <div class="col-md-12">
-                        <span class="badge badge-secondary">Python</span>
-                        <span class="badge badge-secondary">SQL</span>
-                        <span class="badge badge-secondary">JavaScript</span>
+                        <span class="badge badge-success">Python</span>
+                        <span class="badge badge-success">SQL</span>
+                        <span class="badge badge-success">JavaScript</span>
                     </div>
                   </div>
                   <div class="row skill-rows">
                     <div class="col-md-12">
-                        <span class="badge badge-secondary">Django</span>
-                        <span class="badge badge-secondary">HTML</span>
-                        <span class="badge badge-secondary">CSS</span>
+                        <span class="badge badge-success">Django</span>
+                        <span class="badge badge-success">HTML</span>
+                        <span class="badge badge-success">CSS</span>
                     </div>
                   </div>
                   <div class="row skill-rows">
                     <div class="col-md-12">
-                        <span class="badge badge-secondary">PostgreSQL</span>
-                        <span class="badge badge-secondary">jQuery</span>
-                        <span class="badge badge-secondary">Pyramid</span>
+                        <span class="badge badge-success">PostgreSQL</span>
+                        <span class="badge badge-success">jQuery</span>
+                        <span class="badge badge-success">Pyramid</span>
                     </div>
                   </div>
                   <div class="row skill-rows">
                     <div class="col-md-12">
-                        <span class="badge badge-secondary">Heroku</span>
-                        <span class="badge badge-secondary">Bootstrap</span>
-                        <span class="badge badge-secondary">TDD</span>
-                        <span class="badge badge-secondary">Flask</span>
+                        <span class="badge badge-success">Heroku</span>
+                        <span class="badge badge-success">Bootstrap</span>
+                        <span class="badge badge-success">TDD</span>
+                        <span class="badge badge-success">Flask</span>
                     </div>
                   </div>
                   <div class="row skill-rows">
                     <div class="col-md-12">
-                        <span class="badge badge-secondary">Git / Github</span>
-                        <span class="badge badge-secondary">Jira</span>
-                        <span class="badge badge-secondary">Agile Workflow</span>
+                        <span class="badge badge-success">Git / Github</span>
+                        <span class="badge badge-success">Jira</span>
+                        <span class="badge badge-success">Agile Workflow</span>
                     </div>
                   </div>
               </div>
@@ -104,11 +111,11 @@
     </div>
     <!-- Begin projects container -->
     <div class="container" id="projects-div">
-      <h2 class="text-center" id="projects-title">My Work</h2>
+      <h2 class="text-center section-labels" id="projects-title">My Work</h2>
         <div class="row">
           <div class="col-md-6">
             <div class="card mx-auto ind-project">
-              <img class="card-img-top" src="{{ url_for('static', filename='photos/social_recon.png')}}" alt="Project 1">
+              <img class="card-img-top" src="{{ url_for('static', filename='photos/social_recon.png')}}" alt="social recon photo">
               <div class="card-body">
                 <h5 class="card-title">Social Recon</h5>
                 <p class="card-text">Open-source social media scraper to investigate the online presence behind a username/email</p>
@@ -123,7 +130,7 @@
           </div>
           <div class="col-md-6">
             <div class="card mx-auto ind-project">
-              <img class="card-img-top" src="{{ url_for('static', filename='photos/write_me.png')}}" alt="Project 2">
+              <img class="card-img-top" src="{{ url_for('static', filename='photos/write_me.png')}}" alt="write-me photo">
               <div class="card-body">
                 <h5 class="card-title">Write-me</h5>
                 <p class="card-text">PyPI package that generates a README.md customized for your code base</p>
@@ -144,7 +151,7 @@
         <div class="row" id="bottom-proj-row">
           <div class="col-md-6">
             <div class="card mx-auto ind-project">
-              <img class="card-img-top" src="{{ url_for('static', filename='photos/meeting_finder.png')}}" alt="Project 3">
+              <img class="card-img-top" src="{{ url_for('static', filename='photos/meeting_finder.png')}}" alt="meeting finder photo">
               <div class="card-body">
                 <h5 class="card-title">Seattle AA Meeting Finder</h5>
                 <p class="card-text">Connects people in the Seattle area to Alcoholics Anonymous meetings going on near them</p>
@@ -159,7 +166,7 @@
           </div>
           <div class="col-md-6">
             <div class="card mx-auto ind-project">
-              <img class="card-img-top" src="{{ url_for('static', filename='photos/homefit.png')}}" alt="Project 4">
+              <img class="card-img-top" src="{{ url_for('static', filename='photos/homefit.png')}}" alt="homefit photo">
               <div class="card-body">
                 <h5 class="card-title">HomeFit</h5>
                 <p class="card-text">Generates a customized home workout with instructions based on inputs from a user</p>
@@ -174,9 +181,10 @@
           </div>
         </div>
     </div>
-    <div class="contact-div">
+    <!-- Begin contact area. -->
+    <div class="contact-div" id="contact-div">
         <div class="container contact-top">
-          <h2 class="text-center" id="contact-heading">Stay in Touch</h2>
+          <h2 class="text-center section-labels" id="contact-heading">Stay in Touch</h2>
           <div class="contact-info">
             <div class="row text-center">
               <div class="col">
@@ -199,8 +207,8 @@
     </div>
 
     <!-- jQuery, Popper, Bootstrap scripts. -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
